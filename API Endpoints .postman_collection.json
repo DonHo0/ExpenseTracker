@@ -1,0 +1,634 @@
+{
+	"info": {
+		"_postman_id": "cdf205af-0647-4977-9d4b-761050ff6fcf",
+		"name": "API Endpoints ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41864359"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7077/api/expenses/mostfrequentcategory",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"DH1\",\r\n  \"password\": \"securepassword\",\r\n  \"initalBudget\":\"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/users/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				},
+				"description": "Most Frequent Category "
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/users/expenses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"users",
+						"expenses"
+					]
+				},
+				"description": "Registring a user"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/expenses",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/users/expenses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"users",
+						"expenses"
+					]
+				},
+				"description": "Getting the expenses of a user"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/addfunds",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\",\r\n  \"ammount\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/users/addfunds",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"users",
+						"addfunds"
+					]
+				},
+				"description": "Add funds to the users account"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/setlimit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\",\r\n  \"category\":\"Movie\",\r\n  \"ammount\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/users/setlimit",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"users",
+						"setlimit"
+					]
+				},
+				"description": "Setting the limit to a category"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/allusers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\",\r\n  \"category\":\"Movie\",\r\n  \"ammount\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/users/allusers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"users",
+						"allusers"
+					]
+				},
+				"description": "Returns all the users information"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/highestexpenses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\",\r\n  \"category\":\"Movie\",\r\n  \"ammount\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/users/highestexpenses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"users",
+						"highestexpenses"
+					]
+				},
+				"description": "Returns the user with the highest expenses"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/addexpense",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\",\r\n  \"expense\": {\r\n    \"amount\": 100,\r\n    \"category\": \"Food\",\r\n    \"date\": \"2025-02-08\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/addexpense",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"addexpense"
+					]
+				},
+				"description": "Adds a succesful expense for a user"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/addexpense",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"john_doe\",\r\n  \"password\": \"securepassword\",\r\n  \"expense\": {\r\n    \"amount\": 300,\r\n    \"category\": \"Food\",\r\n    \"date\": \"2025-02-08\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/addexpense",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"addexpense"
+					]
+				},
+				"description": "Doesn't allow the user to add an expense becausee the limit for the category is exceded"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/addexpense",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": null,\r\n    \"fromDate\": null,\r\n    \"toDate\": null\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/mostexpensive",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"mostexpensive"
+					]
+				},
+				"description": "Doesn't allow to add because of insufficient available budget."
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/mostexpensive",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": null,\r\n    \"fromDate\": null,\r\n    \"toDate\": null\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/mostexpensive",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"mostexpensive"
+					]
+				},
+				"description": "When the filter is null it shows an error"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/mostexpensive",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"Movie\",\r\n    \"fromDate\": \"2024-02-22\",\r\n    \"toDate\": \"2025-02-09\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/mostexpensive",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"mostexpensive"
+					]
+				},
+				"description": "It find the most expensive expense based on thee category and date, can be ajusted so it only gets based on date"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/leastexpensive",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"\",\r\n    \"fromDate\": \"2024-02-22\",\r\n    \"toDate\": \"2025-02-09\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/leastexpensive",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"leastexpensive"
+					]
+				},
+				"description": "Same as most expensive instead here we find the least expensive expense based on date only"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/averagedaily",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromDate\": \"2024-02-22\",\r\n    \"toDate\": \"2025-02-09\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/averagedaily",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"averagedaily"
+					]
+				},
+				"description": "The daily average of spending between two days for all users"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/averagemonthly",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromDate\": \"2024-12-01\",\r\n    \"toDate\": \"2025-02-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/averagemonthly",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"averagemonthly"
+					]
+				},
+				"description": "Same as the daily one expect here we calculate the average per month"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/mostfrequentcategory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromDate\": \"2024-12-01\",\r\n    \"toDate\": \"2025-02-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/mostfrequentcategory",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"mostfrequentcategory"
+					]
+				},
+				"description": "Returns the most frequent category"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/averageyearly",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromDate\": \"2024-01-01\",\r\n    \"toDate\": \"2025-02-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/averageyearly",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"averageyearly"
+					]
+				},
+				"description": "Returns the average expenses of a year"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7077/api/user/highestaveragedailyspending",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromDate\": \"2024-01-01\",\r\n    \"toDate\": \"2025-02-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7077/api/expenses/highestaveragedailyspending",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"expenses",
+						"highestaveragedailyspending"
+					]
+				},
+				"description": "It returns the month with the most average daily spending"
+			},
+			"response": []
+		}
+	]
+}
